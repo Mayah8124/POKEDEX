@@ -1,16 +1,62 @@
-# React + Vite
+Le Pokédex est une application web développée avec React permettant de consulter et explorer les informations détaillées des Pokémon.
+Elle s’appuie sur une API publique pour récupérer dynamiquement les données (nom, types, statistiques, etc.) et les afficher dans une interface moderne et intuitive.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+L’objectif principal de ce projet est de mettre en pratique :
 
-Currently, two official plugins are available:
+la consommation d’API REST
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+la gestion des composants React
 
-## React Compiler
+la création d’une interface utilisateur responsive
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🚀 Fonctionnalités
 
-## Expanding the ESLint configuration
+L’application propose les fonctionnalités suivantes :
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔍 Affichage des informations d’un Pokémon :
+
+nom
+
+numéro (#ID)
+
+🧬 Affichage des types (ex : Plante, Poison)
+
+📊 Visualisation des statistiques :
+
+PV
+
+Attaque
+
+Défense
+
+Vitesse
+
+📋 Liste des Pokémon disponibles
+
+➕ Possibilité d’ajouter un Pokémon (selon implémentation)
+
+📱 Interface simple et responsive
+
+🛠️ Technologies utilisées
+
+Le projet repose sur les technologies suivantes :
+
+React : gestion de l’interface utilisateur via des composants
+
+Vite : outil de build rapide pour le développement
+
+Tailwind CSS : framework CSS pour le stylage rapide
+
+JavaScript (ES6+) : logique applicative
+
+PokéAPI : API utilisée pour récupérer les données des Pokémon
+
+⚙️ Comment visualiser le projet
+1. Cloner le dépôt
+git clone https://github.com/Mayah8124/POKEDEX
+2. Accéder au dossier du projet
+cd pokedex
+3. Installer les dépendances
+npm install
+4. Lancer le serveur de développement
+npm run dev
