@@ -1,11 +1,12 @@
-function App() {
-  return (
-    <div className="flex items-center justify-center h-screen bg-gray-900">
-      <h1 className="text-4xl text-white font-bold">
-        Projet React + Tailwind 🚀
-      </h1>
-    </div>
-  )
-}
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Home from "./page/Home";
 
-export default App
+const queryClient = new QueryClient();
+
+export default function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Home />
+    </QueryClientProvider>
+  );
+}
