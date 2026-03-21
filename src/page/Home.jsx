@@ -5,6 +5,7 @@ import { useCustomPokemons } from "../hooks/useCustomPokemons";
 import PokemonHeader from "../components/PokemonHeader";
 import PokemonCard from "../components/PokemonCard";
 import CreatePokemonForm from "../components/CreatePokemonForm";
+import pokemonLogo from "../../public/assets/images/pokemon-logo.png";
 
 export default function Home() {
   const [selectedPokemon, setSelectedPokemon] = useState(null);
@@ -37,19 +38,22 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-white via-pink-50 to-rose-50">
       <div className="max-w-4xl mx-auto px-4 py-6">
 
-        <header className="mb-6 text-center">
-          <motion.h1
-            initial={{ y: -20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            className="text-4xl font-black text-pink-400 tracking-tight"
-          >
-            Pokédex
-          </motion.h1>
+        <header className="mb-6 text-center items-center flex flex-col gap-2">
+          <div>
+            <motion.img
+              src={pokemonLogo}
+              alt="Pokemon Logo"
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="w-[40vw] object-contain"
+            />
+          </div>
           <motion.p
             initial={{ y: -10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.1 }}
-            className="text-sm text-pink-300 mt-1"
+            className="text-md text-pink-300 mt-1 font-bold"
           >
             Découvre tous les Pokémon
           </motion.p>

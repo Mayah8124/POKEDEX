@@ -31,7 +31,7 @@ export function useCustomPokemons() {
       name: formData.name.toLowerCase(),
       displayName: formData.name,
       sprites: {
-        front_default: formData.imageUrl || null,
+        front_default: formData.imageUrl || "./assets/images/pokeballimage.png",
       },
       types: formData.types.map((t) => ({
         type: { name: t },
